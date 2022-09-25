@@ -15,7 +15,46 @@
         </p>
     </nav>
 </header>
-<body>
-    <h1>Contact</h1>
+<body style="background-color:#000000; color:#FFFFFF;">
+    <div
+            style="background-image: url('../images/connect.png');background-repeat: no-repeat; background-attachment: fixed;  background-size: 100% auto ; text-align: center;">
+        <h1 style="font-size:100px; color:#FFFFFF; margin:10px;">Contact Us</h1>
+        <p style="font-size:15px; color: #FFFFFF;padding-left: 15%;padding-right: 15%;">
+            Send us events, activities, camps, clubs, and anything STEM related in
+            your area so we can spread the word. We will review the events and add
+            them to the page so more people can participate. Please say where the
+            event is and if you could provide a link to the event too that would be great.
+        </p>
+        <form action="action_page.php"
+              style="text-align:left;padding-left:5%; padding-right:5%;">
+
+            <label for="fname">Your Name:</label>
+            <input type="text" id="fname" name="name" placeholder="Your Name Here">
+            <br>
+            <label for="ename">Name of Event:</label>
+            <input type="text" id="ename" name="ename"
+                   placeholder="Name of event, activity, camp, or club.">
+            <br>
+            <label for="elocate">Event Location:</label>
+            <input type="text" id="elocate" name="location"
+                   placeholder="Location of event, activity, camp, or club.">
+            <br>
+            <label for="edate">Event Date:</label>
+            <input type="text" id="edate" name="date"
+                   placeholder="Date of event, activity, camp, or club.">
+            <br>
+            <label for="slink">Event Link: </label>
+            <input type="text" id="slink" name="link" placeholder="http://">
+            <br>
+            <label for="subject">About Event:</label>
+            <br>
+            <textarea id="subject" name="subject"
+                      placeholder="Write about event, activity, camp, or club."
+                      style="height:200px"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
 </body>
 </html>
